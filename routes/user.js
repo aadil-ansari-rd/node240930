@@ -14,4 +14,8 @@ router.get('/signup/window', (req,res)=>{
 router.post('/signup', (req,res)=>{
     usercontroller.signUp(req,res);
 })
+router.post('/login',(req,res)=>{
+    usercontroller.doLogin(req,res);
+})
+
 module.exports= router;
