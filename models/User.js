@@ -8,7 +8,9 @@ const UserSchema = new Schema({
     
     password: { type : String },
     mobileNo : { type : String },
-    //confirmPassword: { type : string },
+    profileImage: { type: String },//image url will save in this field . 
+    //image will not save in mongodb but it will store at third pary like :S3 of AWS or
+    // cloudnary
     createdAt : Date,
     updatedAt : Date
 })
